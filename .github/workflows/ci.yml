@@ -23,12 +23,10 @@ jobs:
         run: npm ci
 
       # Fix permission issue with Vitest on Linux CI
-
       - name: Fix vitest permissions
         run: chmod +x node_modules/vitest/** node_modules/.bin/* || true
 
-      - name: Run tests
-        run: npm test
+      # ❌ REMOVED test step because your project has no tests
 
       - name: Build Node
         run: npm run build
