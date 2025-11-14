@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": false,
+    "noEmit": true,
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "types": ["google-apps-script"]
+  },
+  "include": ["src/gas/**/*"]
+}
